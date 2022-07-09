@@ -9,5 +9,10 @@
 
     /*fuentes*/
 
-    --fuenteGral : roboto
+    --fuenteGral : roboto;
+    --titulares: 24px;
+    --precios: 18px;
+    --descuentos: 16px;
+    --descripciones: 16px
+
 }

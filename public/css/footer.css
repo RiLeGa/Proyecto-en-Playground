@@ -1,4 +1,5 @@
 footer{
+    background-color: white;
     padding: 20px;
 }
 .home footer section div{
@@ -22,7 +23,7 @@ footer{
     padding-left: 10%;
     padding-right: 10%;
 }
-.home footer section h5{
+.home footer section h6{
     margin-top: 15%;
     padding: 0;
     text-align: start;

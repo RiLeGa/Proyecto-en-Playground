@@ -1,0 +1,96 @@
+main section{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main .Banner{
+    display: none;
+}
+
+main section h2{
+    font-size: var(--titulares);
+    color: var(--colorGrisOscuro);
+    margin-top: 10px;
+}
+
+main section article {
+    background-color: white;
+    width: 100%;
+    padding: 10px 0;
+    margin: 10px 0;
+}
+main section article .Cont{
+    padding: 15px;
+    border-top: 1px solid var(--colorGrisClaro);
+}
+
+main section article .Descripcion{
+    display: none;
+}
+main section article .Precios{
+    font-size: var(--precios);
+    color: black;
+}
+main section article .Descuentos{
+    font-size: var(--descuentos);
+    color: var(--colorVerde);
+}
+main section article .Truck{
+    display: inline-block;
+    color: var(--colorVerde);
+    padding: 10px;
+    border: 1px solid var(--colorVerde);
+    border-radius: 50%;
+}
+
+main article img{
+    width: 100%;
+} 
+
+/* Tablet */
+
+@media (min-width:461px) {
+    main div .Banner {
+        display: block;
+        width: 100%;
+    }
+    main section article .Descripcion{
+        display: block;
+        font-size: var(--descripciones);
+        color: var(--colorGrisOscuro);
+        margin-top: 10px;
+    }
+    main section article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    
+}
+
+/* Desktop */
+
+@media (min-width:461px) {
+    main div .Banner {
+        display: block;
+        width: 100%;
+    }
+    main section article .Descripcion{
+        display: block;
+        font-size: var(--descripciones);
+        color: var(--colorGrisOscuro);
+        margin-top: 10px;
+    }
+    main section article {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    
+}
+
+@media (min-width:769px) {
+    main section article .Descripcion{
+        display: block;
+        font-size: var(--descripciones);
+        color: var(--colorGrisOscuro);
+        margin-top: 10px;
+    }
+    
+}
