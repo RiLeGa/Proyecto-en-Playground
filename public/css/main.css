@@ -24,14 +24,23 @@ main section article .Cont{
     border-top: 1px solid var(--colorGrisClaro);
 }
 
-main section article .Descripcion{
-    display: none;
+main section article .precio{
+    display: flex;
+    align-items: center;
+    width: 40%;
+    justify-content: space-between;
 }
-main section article .Precios{
+
+main section article .Descripcion{
+    font-size: var(--descripciones);
+    color: var(--colorGrisOscuro);
+    margin-top: 10px;
+}
+main section article .precio .Precios{
     font-size: var(--precios);
     color: black;
 }
-main section article .Descuentos{
+main section article .precio .Descuentos{
     font-size: var(--descuentos);
     color: var(--colorVerde);
 }
@@ -68,16 +77,17 @@ main article img{
 
 /* Desktop */
 
-@media (min-width:461px) {
-    main div .Banner {
-        display: block;
-        width: 100%;
-    }
+@media (min-width:769px) {
+
     main section article .Descripcion{
         display: block;
         font-size: var(--descripciones);
         color: var(--colorGrisOscuro);
         margin-top: 10px;
+    }
+    main div .Banner {
+        display: block;
+        width: 100%;
     }
     main section article {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
@@ -85,12 +95,3 @@ main article img{
     
 }
 
-@media (min-width:769px) {
-    main section article .Descripcion{
-        display: block;
-        font-size: var(--descripciones);
-        color: var(--colorGrisOscuro);
-        margin-top: 10px;
-    }
-    
-}
