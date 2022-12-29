@@ -1,0 +1,101 @@
+.register{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin: 0 auto;
+    
+}
+.register  h2{
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: var(--titulares);
+    width: 96vw;
+    color: var(--colorGrisOscuro);
+    margin-left: 0;
+}
+.register form{
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3px;
+    margin-bottom: 20px;
+}
+.register .container{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.register  .container label{
+    margin-bottom: 5px;
+}
+
+.register  .container input{
+    padding: 4px;/* permite agrandar o achicar a gusto la barra para colocar el nombre */
+    margin-top: 4px;
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: var(--colorGrisClaro);
+    border-radius: 3px;
+    border-style: none;
+    color: var(--colorGrisOscuro);
+    font-style: italic;
+}
+
+.register .container small{
+    color: red;
+    margin-top: 3px;
+}
+.register   h4{
+    margin-top: 20px;
+}
+.register .Intereses{
+    display: flex;
+    width: 80%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.register button{
+    padding: 2px;
+    background-color: white;
+    border-color: var(--colorGrisClaro);
+    border-width: 1px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    
+}
+
+.register select{
+    border-width: 1px;
+    border-radius: 3px;
+    border-color: var(--colorGrisClaro);
+    border-radius: 3px;
+    border-style: none;
+}
+
+/* Tablet */
+@media (min-width:769px){
+    
+}
+
+/* Desktop */
+@media (min-width:1024px){
+    .register .Intereses{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+}
