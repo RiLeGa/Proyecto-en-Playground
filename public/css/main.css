@@ -1,16 +1,26 @@
 main section{
-    width: 90%;
-    margin: 0 auto;
+    width: 96%;
+    margin-left: 2vw;
 }
 
 main .Banner{
     display: none;
 }
 
-main section h2{
+main h2{
     font-size: var(--titulares);
+    width: 96vw;
     color: var(--colorGrisOscuro);
     margin-top: 10px;
+    margin-left: 2vw;
+}
+main h4{
+    font-size: 18px;
+    width: 100%;
+}
+main h5{
+    font-size: 15px;
+    width: 100%;
 }
 
 main section article {
@@ -18,6 +28,7 @@ main section article {
     width: 100%;
     padding: 10px 0;
     margin: 10px 0;
+    position: relative;
 }
 main section article .Cont{
     padding: 15px;
@@ -27,8 +38,7 @@ main section article .Cont{
 main section article .precio{
     display: flex;
     align-items: center;
-    width: 40%;
-    justify-content: space-between;
+    width: 100%;
 }
 
 main section article .Descripcion{
@@ -37,19 +47,31 @@ main section article .Descripcion{
     margin-top: 10px;
 }
 main section article .precio .Precios{
+    width: fit-content;
+    margin-right: 10px;
     font-size: var(--precios);
     color: black;
 }
 main section article .precio .Descuentos{
+    width: 70%;
     font-size: var(--descuentos);
     color: var(--colorVerde);
 }
 main section article .Truck{
-    display: inline-block;
     color: var(--colorVerde);
     padding: 10px;
     border: 1px solid var(--colorVerde);
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
     border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    bottom: 76px;
 }
 
 main article img{
@@ -58,7 +80,7 @@ main article img{
 
 /* Tablet */
 
-@media (min-width:461px) {
+@media (min-width:616px) {
     main div .Banner {
         display: block;
         width: 100%;
@@ -69,15 +91,78 @@ main article img{
         color: var(--colorGrisOscuro);
         margin-top: 10px;
     }
+    main section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 96%;
+        margin-left: 2vw;
+    }
+    main h2{
+        font-size: var(--titulares);
+        width: 96vw;
+        color: var(--colorGrisOscuro);
+        margin-top: 25px;
+        margin-bottom: 20px;
+        margin-left: 4vw;
+    }
     main section article {
+        background-color: white;
+        width: 45%;
+        padding: 10px 0;
+        margin: 10px 0;
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
+    main section article .precio{
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    
+    main section article .Descripcion{
+        font-size: var(--descripciones);
+        color: var(--colorGrisOscuro);
+        margin-top: 10px;
+    }
+    main section article .precio .Precios{
+        width: fit-content;
+        margin-right: 10px;
+        font-size: var(--precios);
+        color: black;
+    }
+    main section article .precio .Descuentos{
+        width: 70%;
+        font-size: var(--descuentos);
+        color: var(--colorVerde);
+    }
+    main section article .Truck{
+        color: var(--colorVerde);
+        padding: 10px;
+        border: 1px solid var(--colorVerde);
+        display: block;
+        font-size: 16px;
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #39b54a;
+        background-color: #FFF;
+        border-radius: 50%;
+        position: absolute;
+        right: 20px;
+        bottom: 76px;
+    }
+    
+    main article img{
+        width: 100%;
+    } 
     
 }
 
 /* Desktop */
 
-@media (min-width:769px) {
+@media (min-width:795px) {
 
     main section article .Descripcion{
         display: block;
@@ -89,9 +174,72 @@ main article img{
         display: block;
         width: 100%;
     }
-    main section article {
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    main section {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        width: 96%;
+        margin-left: 2vw;
     }
+    main h2{
+        font-size: var(--titulares);
+        width: 96vw;
+        color: var(--colorGrisOscuro);
+        margin-top: 25px;
+        margin-bottom: 20px;
+        margin-left: 3.3vw;
+    }
+    main section article {
+        background-color: white;
+        width: 22%;
+        padding: 10px 0;
+        margin: 10px 0;
+        box-shadow: 0px 0px 10px rgb(100 100 100);
+    }
+    main section article .precio{
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    
+    main section article .Descripcion{
+        font-size: var(--descripciones);
+        color: var(--colorGrisOscuro);
+        margin-top: 10px;
+    }
+    main section article .precio .Precios{
+        width: fit-content;
+        margin-right: 10px;
+        font-size: var(--precios);
+        color: black;
+    }
+    main section article .precio .Descuentos{
+        width: 70%;
+        font-size: var(--descuentos);
+        color: var(--colorVerde);
+    }
+    main section article .Truck{
+        color: var(--colorVerde);
+        padding: 10px;
+        border: 1px solid var(--colorVerde);
+        display: block;
+        font-size: 16px;
+        padding: 5px;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #39b54a;
+        background-color: #FFF;
+        border-radius: 50%;
+        position: absolute;
+        right: 20px;
+        bottom: 76px;
+    }
+    
+    main article img{
+        width: 100%;
+    } 
     
 }
 
