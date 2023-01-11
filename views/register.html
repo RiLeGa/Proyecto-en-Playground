@@ -13,7 +13,7 @@
         <section>
             <img src="/images/logo-mercado-liebre.svg" alt="Logo de Mercado Liebre">
         <div>
-            <input type="search" name="q" placeholder="Buscar productos, marcas" autofocus required>
+            <input type="search" name="q" placeholder="Buscar productos, marcas" autofocus>
             <i class="fas fa-search"></i>
         </div>
             <h2><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de credito</h2>
@@ -38,48 +38,49 @@
     </header>
     <main class="register">
         <h2>¡Bienvenido a MercadoLiebre!</h2>
-        <form action="/registro" method="get">
+        <form action="/" method="get">
            <div class="container">
                <h4>Nombre y Apellido</h4>
-               <input type="text" name="nombre"  id="nombre" placeholder="Nombre y Apellido" required>
+               <input type="text" name="nombre"  id="nombre" placeholder="Nombre y Apellido">
                <small>*Por favor ingresa tu nombre</small>
            </div>
            <div class="container">
                 <h4>Nombre De Usuari@</h4>
-               <input type="text" name="nombreDeUsuario" id="nombreDeUsuario" placeholder="Nombre De Usuari@" required>
+               <input type="text" name="nombreDeUsuario" id="nombreDeUsuario" placeholder="Nombre De Usuari@">
            </div>
            <div class="container">
                 <h4>Email</h4>
-                <input type="email" name="email" id="email" placeholder="Email" required>
+                <input type="email" name="email" id="email" placeholder="Email">
            </div>
             
             <div class="container">
                 <h4>Fecha de nacimiento</h4>
-                <input type="date" name="fecha" value="2022-07-26" required>
+                <input type="date" name="fecha" value="2022-01-01">
             </div>
            
             <div class="container">
                 <h4>Domicilio</h4>
-                 <input type="text" name="domicilio" id="domicilio"  placeholder="Domicilio" required>
+                 <input type="text" name="domicilio" id="domicilio"  placeholder="Domicilio">
             </div>
 
               <div class="container">
                 <h4>Contraseña</h4>
-                 <input type="password" name="contrasenia" id="contrasenia"  placeholder="ingresá tu contraseña" required>
+                 <input type="password" name="contrasenia" id="contrasenia"  placeholder="Ingresá tu contraseña">
               </div>
                <div class="container">
                 <h4>Cofirma tu contraseña</h4>
-                 <input type="password" name="clave2" id="clave2" placeholder="confirmá tu contraseña" required>
+                 <input type="password" name="clave2" id="clave2" placeholder="Confirmá tu contraseña">
                </div>
                <div class="container">
                 <h4>Selecciona una foto de perfil</h4>
                  <input type="file" name="avatar">
                </div>
             <h4>¿Querés comprar o vender?</h4>
-            <select name="perfil" required>
-             <option value="comprador">Comprar</option>
-             <option value="vendedor">Vender</option>
-            </select>
+            <div class="perfil">
+                <span>Comprador <input type="radio" name="Perfil" value="Comprador"></span>
+                
+                <span>Vendedor <input type="radio" name="Perfil" value="Vendedor"></span>
+            </div>
             <h4>Intereses</h4>
             <div class="Intereses">
                 <span for="Elec">Electro <input type="checkbox" name="intereses" value="Electro"></span>
@@ -93,7 +94,7 @@
                 <span for="VS">Vida sana <input type="checkbox" name="intereses" value="Vida sana"></span>
                 
             </div>
-            <button type="submit"><a href="/">Enviar</a></button>
+            <button type="submit">Enviar</button>
             <button type="reset">Cancelar</button>
         </form>
     

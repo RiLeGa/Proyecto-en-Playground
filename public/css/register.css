@@ -25,6 +25,16 @@
     margin-top: 3px;
     margin-bottom: 20px;
 }
+
+.register form .perfil{
+    display: flex;
+    width: 40%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
 .register .container{
     display: flex;
     width: 100%;
@@ -38,7 +48,8 @@
 }
 
 .register  .container input{
-    padding: 4px;/* permite agrandar o achicar a gusto la barra para colocar el nombre */
+    background-color: white;
+    padding: 10px;/* permite agrandar o achicar a gusto la barra para colocar el nombre */
     margin-top: 4px;
     border-width: 1px;
     border-radius: 3px;
@@ -46,7 +57,6 @@
     border-radius: 3px;
     border-style: none;
     color: var(--colorGrisOscuro);
-    font-style: italic;
 }
 
 .register .container small{
@@ -66,21 +76,16 @@
     margin-bottom: 20px;
 }
 .register button{
-    padding: 2px;
-    background-color: white;
-    border-color: var(--colorGrisClaro);
-    border-width: 1px;
-    border-radius: 3px;
-    margin-bottom: 20px;
+        width: 100%;
+        background-color: var(--colorCeleste);
+        border-radius:  2px var(--colorCeleste);
+        margin-top: 30px;
+        padding: 10px;
+        border-color: var(--colorCeleste);
+        border-style: none;
+        border-radius: 3px;
+        margin-bottom: 20px;
     
-}
-
-.register select{
-    border-width: 1px;
-    border-radius: 3px;
-    border-color: var(--colorGrisClaro);
-    border-radius: 3px;
-    border-style: none;
 }
 
 /* Tablet */

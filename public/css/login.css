@@ -1,5 +1,5 @@
 .login{
-    width: 96%;
+    width: 90%;
     margin: 0 auto;
 } 
 .login .container{
@@ -13,11 +13,11 @@
 }
 .login .container input{
     width: 100%;
-    padding:5px;
+    padding:10px;
     border-color: var(--colorGrisClaro);
     border-style: none;
     color: var(--colorGrisOscuro);
-    font-style: italic;
+    
     
    
 }
@@ -26,7 +26,7 @@
     background-color: var(--colorCeleste);
     border-radius:  2px var(--colorCeleste);
     margin-top: 30px;
-    padding: 5px;
+    padding: 10px;
     border-color: var(--colorCeleste);
     border-style: none;
     border-radius: 3px;
@@ -40,7 +40,7 @@
 /* Tablet */
 @media (min-width:768px){
     .login{
-        width: 96%;
+        width: 50%;
         margin: 0 auto;
     }
     .login .container{
@@ -54,11 +54,10 @@
     }
     .login .container input{
         width: 100%;
-        padding:5px;
+        padding:10px;
         border-color: var(--colorGrisClaro);
         border-style: none;
         color: var(--colorGrisOscuro);
-        font-style: italic;
         
        
     }
@@ -67,7 +66,7 @@
         background-color: var(--colorCeleste);
         border-radius:  2px var(--colorCeleste);
         margin-top: 30px;
-        padding: 5px;
+        padding: 10px;
         border-color: var(--colorCeleste);
         border-style: none;
         border-radius: 3px;
@@ -82,7 +81,7 @@
 /* Desktop */
 @media (min-width:1024px){
     .login{
-        width: 96%;
+        width: 50%;
         margin: 0 auto;
     }
     .login .container{
@@ -96,11 +95,10 @@
     }
     .login .container input{
         width: 100%;
-        padding:5px;
+        padding:10px;
         border-color: var(--colorGrisClaro);
         border-style: none;
         color: var(--colorGrisOscuro);
-        font-style: italic;
         
        
     }
@@ -109,13 +107,13 @@
         background-color: var(--colorCeleste);
         border-radius:  2px var(--colorCeleste);
         margin-top: 30px;
-        padding: 5px;
+        padding: 10px;
         border-color: var(--colorCeleste);
         border-style: none;
         border-radius: 3px;
         margin-bottom: 20px;
     }
-    .login button a{
+    .login button {
         color: white;
         
     }
